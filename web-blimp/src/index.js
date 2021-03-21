@@ -52,7 +52,7 @@ function userName(){
 
     }
     else{
-        console.log('short password')
+        console.log('Your password should be ar least 6 characters.')
     }
 
 }
@@ -73,7 +73,7 @@ function find_userPassword(){
   
         }
         else{
-            alert('Wrong Password Try Again')
+            alert('Incorrect password, please try again.')
         }
     
         });
@@ -161,7 +161,7 @@ auth.onAuthStateChanged(function(user){
         
     }else{
         
-        alert("No Active User");
+        alert("No active user. Please sign in if you have an already existing account or sign up to create a new one.");
         active_user = false;
         console.log("User Disconnected");
         //no user is signed in
